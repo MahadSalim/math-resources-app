@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer';
+import {Link} from 'react-router-dom';
 
 function HomePage() {
     return (
@@ -9,23 +11,27 @@ function HomePage() {
                 margin: '2rem',
                 borderRadius: '5px'
             }}>
-                <p style={{fontSize: '1.5rem'}}>
+                <p style={{fontSize: '1.25rem'}}>
                     Welcome to Math Resources! We provide a platform where you can find and rate various Math resources. 
-                    Here you can find different math resources including textbooks, worksheets, tutorials and video tutorials!
+                    Whether you're searching for textbooks, worksheets, or video tutorials, we've got you covered!
                 </p>
             </div>
-            <p style={{fontSize: '1.2rem'}}>Click below to get started:</p>
-            <div style={{
-                backgroundColor: '#ffe4b5',
-                padding: '0px 20px',
-                margin: '0.1rem',
-                borderRadius: '5px',
-                display: 'inline-block',
-                cursor: 'pointer'
-            }}>
-                <h3>RATE</h3>
-            </div>
+            <p style={{fontSize: '1.1rem'}}>Click below to get started:</p>
+            <Link to="/resources">
+                <div style={{
+                    backgroundColor: '#ffe4b5',
+                    padding: '1px 50px',
+                    margin: '1rem',
+                    borderRadius: '5px',
+                    display: 'inline-block',
+                    cursor: 'pointer'
+                }}>
+                    <h3>RATE</h3>
+                </div>
+            </Link>
+            <Footer/>
         </div>
+        
     );
 }
 
