@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import HomePage from './HomePage';
 import ResourcesPage from './ResourcesPage';
 import './App.css';
@@ -10,10 +9,9 @@ function App() {
   return (
     <div className='App'>
       <Router>
-        <Header />
         <Routes>
-          <Route path="/" exact Component={HomePage} />
-          <Route path='/resources' Component={ResourcesPage} /> 
+          <Route path="/" exact element={<HomePage />} />
+          <Route path='/resources' element={<ResourcesPage />} /> 
         </Routes>
       </Router>
     </div>
