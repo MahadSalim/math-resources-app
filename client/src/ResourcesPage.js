@@ -21,7 +21,7 @@ function ResourcesPage() {
                 <div style={{
                     backgroundColor: '#d3d3d3',
                     padding: '2rem',
-                    width: '13%',
+                    width: '10.5%',
                     marginRight: '1rem'
                 }}>
                     <p style={{fontSize: '1rem', textAlign: 'left'}}>Sort By:</p>
